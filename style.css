@@ -1,0 +1,35 @@
+body {
+    background-color: #fff;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: start; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 500px; 
+    /* height: 500px; */
+}
+
+.gridSquare {
+
+    background-color: blue;
+    /* flex-grow: 1; */
+    /* width: calc(100% / 16); */
+    /* max-width: var(grid); */
+    /* height: var(grid); */
+    /* border: 1px black solid; */
+    /* margin: 0 0; */
+    /* aspect-ratio: 1 / 1; */
+    /* width: 1em; */
+
+
+}
+
+.gridSquare::before {
+    content:'';
+    display:block;
+    padding-top: 100%;
+}
