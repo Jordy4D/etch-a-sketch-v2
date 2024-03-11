@@ -4,32 +4,28 @@ body {
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.container button {
+    margin: 20px 0;
 }
 
 .grid {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: start; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    width: 500px; 
-    /* height: 500px; */
+    width: 960px; 
 }
 
 .gridSquare {
+    background-color: lightgrey;
 
-    background-color: blue;
-    /* flex-grow: 1; */
-    /* width: calc(100% / 16); */
-    /* max-width: var(grid); */
-    /* height: var(grid); */
-    /* border: 1px black solid; */
-    /* margin: 0 0; */
-    /* aspect-ratio: 1 / 1; */
-    /* width: 1em; */
+}
 
-
+.gridDraw {
+    background-color: black;
 }
 
 .gridSquare::before {
